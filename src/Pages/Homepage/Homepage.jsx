@@ -10,13 +10,13 @@ const Homepage = () => {
             <div className="hero__section">
                 <div className="left__container">
                     <img src={Left} alt="" />
-                    <h2>ラーメンは最大の喜びです</h2>
-                    <h2>一楽</h2>
+                    <h2 className="jap__text1">ラーメンは最大の喜びです</h2>
+                    <h2 className="jap__text2">一楽</h2>
                 </div>
                 <div className="hero__container">
                     <div className="hero">
                         <div className="hero__text">
-                            <h2>Japanese Authentic Noodle Restaurant</h2>
+                            <h2>Japanese Authentic <br/>Noodle Restaurant</h2>
                             <p>Ramen is the best pleasure</p>
 
                             <div className="buttons">
@@ -32,7 +32,6 @@ const Homepage = () => {
                         <h3>39k+</h3>
                         <p>Satisfied<br/>Costumers</p>
                     </div>
-                    <div className="vl"/>
                     <div className="right__text">
                         <img src={Owner} alt="Owner"/>
                         <p>"This is the best Authentic<br/>Japanese Restaurant I have<br/>experienced"</p>
