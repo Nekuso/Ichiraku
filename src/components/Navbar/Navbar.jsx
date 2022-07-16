@@ -7,6 +7,7 @@ const Navbar = () => {
 
     const [navActive, setNavActive] = useState("nav__links");
     const [btnActive, setBtnActive] = useState("nav__hamburger");
+    const [btnHam, setBtnHam] = useState(false);
 
     const navToggle = () => {
         navActive === "nav__links" ? setNavActive("nav__links nav__active")
@@ -14,6 +15,9 @@ const Navbar = () => {
 
         btnActive === "nav__hamburger" ? setBtnActive("nav__hamburger is-active")
         : setBtnActive("nav__hamburger")
+
+        btnHam === false ? setBtnHam(true) : setBtnHam(false)
+
     }
 
     return (
@@ -32,7 +36,10 @@ const Navbar = () => {
                 <li><Link to="/" className="Link" onClick={navToggle}>ABOUT US</Link></li>
             </ul>
 
-            <button onClick={navToggle} className={btnActive}>
+            <button style={{
+                position: btnHam && "fixed",
+                top: btnHam && 35,
+                right: btnHam && 35,}} onClick={navToggle} className={btnActive}>
                 <span></span>
                 <span></span>
                 <span></span>

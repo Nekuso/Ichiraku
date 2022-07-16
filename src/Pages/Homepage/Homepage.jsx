@@ -21,7 +21,7 @@ const Homepage = () => {
 
                             <div className="buttons">
                                 <a href="/">Explore →</a>
-                                <a href="/">Branches</a>
+                                <a href="/" className="branchBtn">Branches</a>
                             </div>
                         </div>
                         <img src={Hero} alt="" />
@@ -32,6 +32,7 @@ const Homepage = () => {
                         <h3>39k+</h3>
                         <p>Satisfied<br/>Costumers</p>
                     </div>
+                    <div className="vl"></div>
                     <div className="right__text">
                         <img src={Owner} alt="Owner"/>
                         <p>"This is the best Authentic<br/>Japanese Restaurant I have<br/>experienced"</p>

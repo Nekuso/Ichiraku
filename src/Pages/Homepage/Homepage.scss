@@ -6,8 +6,8 @@
         grid-template-areas: 
         "left main main"
         "left main main"
-        "left footer footer"
-        ;
+        "left footer footer";
+
         justify-content: center;
         height: 675px;
         width: 100%;
@@ -43,7 +43,6 @@
                 bottom: 2%;
             }
         }
-
         .hero__container {
             grid-area: main;
             display: flex;
@@ -56,12 +55,15 @@
                 justify-content: space-around;
                 align-items: center;
                 width: 100%;
+
                 .hero__text {
                     h2 {
+                        color: #2B2C39;
                         font-size: 3.2vw;
                         margin-bottom: .5rem;
                     }
                     p {
+                        color: #2B2C39;
                         font-size: 1.8vw;
                         margin-bottom: 1.5rem;
                     }
@@ -72,9 +74,15 @@
                         a{
                             font-size: 1.7vw;
                             background: #FF9E68;
-                            padding: .7rem 1.5rem;
-                            border-radius: 1rem;
+                            padding: .9rem 1.5rem;
+                            border-radius: 2rem;
                             color: white;
+                            font-weight: 600;
+                        }
+                        .branchBtn {
+                            background: rgba(43, 44, 57, 0);
+                            border: 1px solid #656781;
+                            color: #2B2C39;
                         }
                     }
                 }
@@ -87,7 +95,7 @@
         .bottom__container {
             grid-area: footer;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
             background: #424258;
 
@@ -103,6 +111,12 @@
                 p {
                     color: white;
                 }
+            }
+            
+            .vl {
+                width: 1px;
+                height:70%;
+                background: rgba(255, 255, 255, 0.212);
             }
 
             .right__text {
@@ -123,7 +137,7 @@
     .homepage {
         .hero__section {
             grid-template-columns: 100%;
-            grid-template-rows: 400px 150px;
+            grid-template-rows: 370px 150px;
             grid-template-areas: 
                 "main"
                 "footer"
@@ -146,6 +160,15 @@
                             font-size: 2.7vw;
                             color: white;
                             margin-bottom: 1rem;
+                        }
+                        
+                        .buttons {
+                            a {
+                                padding: .6rem 1.1rem;
+                            }
+                            .branchBtn {
+                                color: #ffffff;
+                            }
                         }
                     }
                 }
