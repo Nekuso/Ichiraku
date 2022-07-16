@@ -7,7 +7,7 @@
     justify-content: space-between;
     max-width: 90%;
     margin: 0 auto;
-    padding: 2.4rem 1rem;
+    padding: 2rem 1rem;
 
     .brand__logo {
         width: 130px;
@@ -128,7 +128,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .navbar {
         .nav__links {
             display: flex;
