@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../dist.css/Homepage.css';
 import Hero from '../../img/Hero.png';
-import Left from '../../img/Left.png';
 import Owner from '../../img/Owner.png';
 
 const Homepage = () => {
@@ -9,7 +8,7 @@ const Homepage = () => {
         <div className="homepage">
             <div className="hero__section">
                 <div className="left__container">
-                    <img src={Left} alt="" />
+                    <div className="left__img"/>
                     <h2 className="jap__text1">ラーメンは最大の喜びです</h2>
                     <h2 className="jap__text2">一楽</h2>
                 </div>
