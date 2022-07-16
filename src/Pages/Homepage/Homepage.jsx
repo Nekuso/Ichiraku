@@ -37,7 +37,6 @@ const Homepage = () => {
                         <img src={Owner} alt="Owner"/>
                         <p>"This is the best Authentic<br/>Japanese Restaurant I have<br/>experienced"</p>
                     </div>
-
                 </div>
             </div>
         </div>

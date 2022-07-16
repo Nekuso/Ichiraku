@@ -70,9 +70,9 @@
                     
                     .buttons {
                         display: flex;
-                        gap: 10px;
+                        gap: 15px;
                         a{
-                            font-size: 1.7vw;
+                            font-size: 1.4vw;
                             background: #FF9E68;
                             padding: .9rem 1.5rem;
                             border-radius: 2rem;
@@ -92,6 +92,7 @@
                 }
             }
         }
+
         .bottom__container {
             grid-area: footer;
             display: flex;
