@@ -140,7 +140,7 @@ export const StyledNavbar = styled.div `
             li {
                 margin: 0.5rem 1.7rem;
                 .Link {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     font-weight: 500;
 
                     &:hover {
