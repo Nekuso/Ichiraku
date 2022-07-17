@@ -1,4 +1,9 @@
-.homepage {
+import styled from  'styled-components';
+import Left from '../../img/Left.png';
+import Left2 from '../../img/Left3.png';
+import Left3 from '../../img/Left3.png';
+
+export const StyledHomepage = styled.div `
     .hero__section {
         display: grid;
         grid-template-columns: 25% 37.5% 37.5%;
@@ -22,7 +27,7 @@
                 align-self: flex-end;
                 width: 100%;
                 height: 80%;
-                background-image: url(../img/Left.png);
+                background-image: url(${Left});
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
                 animation: change 10s infinite ease-in-out;
@@ -135,10 +140,8 @@
             }
         }
     }
-}
 
-@media screen and (max-width: 768px) {
-    .homepage {
+    @media screen and (max-width: 768px) {
         .hero__section {
             grid-template-columns: 100%;
             grid-template-rows: 370px 150px;
@@ -202,10 +205,8 @@
             }
         }
     }
-}
 
-@media screen and (max-width: 425px) {
-    .homepage {
+    @media screen and (max-width: 425px) {
         .hero__section {
             grid-template-columns: 100%;
             grid-template-rows: 450px 100px;
@@ -278,36 +279,36 @@
             }
         }
     }
-}
-    
+        
 
-@keyframes change{
-    0%
-    {
-        background-image: url(../img/Left.png);
+    @keyframes change{
+        0%
+        {
+            background-image: url(${Left});
+        }
+        20%
+        {
+            background-image: url(${Left});
+        }
+        25%
+        {
+            background-image: url(${Left2});
+        }
+        50%
+        {
+            background-image: url(${Left2});
+        }
+        60%
+        {
+            background-image: url(${Left3});
+        }
+        90%
+        {
+            background-image: url(${Left3});
+        }
+        100%
+        {
+            background-image: url(${Left});
+        }
     }
-    20%
-    {
-        background-image: url(../img/Left.png);
-    }
-    25%
-    {
-        background-image: url(../img/Left2.png);
-    }
-    50%
-    {
-        background-image: url(../img/Left2.png);
-    }
-    60%
-    {
-        background-image: url(../img/Left3.png);
-    }
-    90%
-    {
-        background-image: url(../img/Left3.png);
-    }
-    100%
-    {
-        background-image: url(../img/Left.png);
-    }
-}
+`

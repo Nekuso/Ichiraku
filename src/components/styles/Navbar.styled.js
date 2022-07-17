@@ -1,4 +1,6 @@
-.navbar {
+import styled from  'styled-components';
+
+export const StyledNavbar = styled.div `
     position: absolute;
     top: 0;
     left: 0;
@@ -28,10 +30,9 @@
             }
         }
     }
-}
 
-@media (max-width: 768px) {
-    .navbar {
+
+    @media (max-width: 768px) {
         padding: 1.5rem 0;
         max-width: 90vw;
 
@@ -127,10 +128,8 @@
             background: #FFFF;
         }
     }
-}
 
-@media screen and (min-width: 769px) {
-    .navbar {
+    @media screen and (min-width: 769px) {
         .nav__links {
             display: flex;
             align-items: center;
@@ -161,4 +160,4 @@
             background: none;
         }
     }
-}
+`

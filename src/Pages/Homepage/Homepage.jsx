@@ -1,17 +1,19 @@
 import React from 'react';
-import '../../dist.css/Homepage.css';
 import Hero from '../../img/Hero.png';
 import Owner from '../../img/Owner.png';
+import { StyledHomepage } from '../../components/styles/Homepage.styled';
 
 const Homepage = () => {
     return (
-        <div className="homepage">
+        <StyledHomepage>
+
             <div className="hero__section">
                 <div className="left__container">
                     <div className="left__img"/>
                     <h2 className="jap__text1">ラーメンは最大の喜びです</h2>
                     <h2 className="jap__text2">一楽</h2>
                 </div>
+
                 <div className="hero__container">
                     <div className="hero">
                         <div className="hero__text">
@@ -26,6 +28,7 @@ const Homepage = () => {
                         <img src={Hero} alt="" />
                     </div>
                 </div>
+
                 <div className="bottom__container">
                     <div className="left__text">
                         <h3>39k+</h3>
@@ -37,8 +40,9 @@ const Homepage = () => {
                         <p>"This is the best Authentic<br/>Japanese Restaurant I have<br/>experienced"</p>
                     </div>
                 </div>
+
             </div>
-        </div>
+        </StyledHomepage>
     );
 }
 

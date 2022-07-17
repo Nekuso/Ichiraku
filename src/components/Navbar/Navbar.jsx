@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import '../../dist.css/Navbar.css';
 import Brand from '../../img/Brand.png';
+import { StyledNavbar } from '../styles/Navbar.styled';
 
 const Navbar = () => {
 
@@ -21,7 +21,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar">
+        <StyledNavbar>
             <div className="brand__logo">
                 <a href="/">
                     <img src={Brand} alt="brand" />
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <span></span>
                 <span></span>
             </button>
-        </div>
+        </StyledNavbar>
     );
 }
 
