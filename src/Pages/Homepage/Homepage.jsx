@@ -1,12 +1,13 @@
 import React from 'react';
 import Hero from '../../img/Hero.png';
 import Owner from '../../img/Owner.png';
-import { StyledHomepage } from '../../components/styles/Homepage.styled';
+import { StyledHero } from '../../components/styles/Hero.styled';
 
 const Homepage = () => {
-    return (
-        <StyledHomepage>
 
+    
+    return (
+        <StyledHero>
             <div className="hero__section">
                 <div className="left__container">
                     <div className="left__img"/>
@@ -42,7 +43,7 @@ const Homepage = () => {
                 </div>
 
             </div>
-        </StyledHomepage>
+        </StyledHero>
     );
 }
 

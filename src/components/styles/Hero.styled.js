@@ -1,9 +1,9 @@
 import styled from  'styled-components';
 import Left from '../../img/Left.png';
-import Left2 from '../../img/Left3.png';
+import Left2 from '../../img/Left2.png';
 import Left3 from '../../img/Left3.png';
 
-export const StyledHomepage = styled.div `
+export const StyledHero = styled.div `
     .hero__section {
         display: grid;
         grid-template-columns: 25% 37.5% 37.5%;
@@ -42,8 +42,9 @@ export const StyledHomepage = styled.div `
             .jap__text1 {
                 writing-mode: vertical-rl;
                 text-orientation: mixed;
-                left: 4%;
+                left: 5%;
                 bottom: 10%;
+                font-size: 2rem;
             }
             
             .jap__text2 {
