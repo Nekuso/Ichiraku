@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import Brand from '../../img/Brand.png';
-import { StyledNavbar } from '../styles/Navbar.styled';
+import Brand from '../img/Brand.png';
+import { StyledNavbar } from './styles/Navbar.styled';
 
 const Navbar = () => {
 
