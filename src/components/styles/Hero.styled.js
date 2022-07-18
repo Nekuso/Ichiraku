@@ -84,6 +84,7 @@ export const StyledHero = styled.div `
                             font-size: 1.4vw;
                             background: #FF9E68;
                             padding: .9rem 1.5rem;
+                            border: 1px solid #FF9E68;
                             border-radius: 2rem;
                             color: white;
                             font-weight: 600;
@@ -159,7 +160,6 @@ export const StyledHero = styled.div `
             ;
             height: auto;
 
-
             .left__container {
                 display: none;
             }
@@ -180,7 +180,8 @@ export const StyledHero = styled.div `
                         
                         .buttons {
                             a {
-                                padding: .6rem 1.1rem;
+                                font-size: 2.5vw;
+                                padding: .8rem 1.1rem;
                             }
                             .branchBtn {
                                 color: #ffffff;
@@ -250,7 +251,7 @@ export const StyledHero = styled.div `
                             justify-content:center;
                             a {
                                 font-size: 3vw;
-                                padding: .6rem 1.1rem;
+                                padding: .8rem 1.1rem;
                             }
                         }
                     }

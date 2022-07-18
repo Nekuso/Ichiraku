@@ -104,6 +104,4 @@ export const StyledAbout = styled.div `
             }
         }
     }
-
-    
 `
