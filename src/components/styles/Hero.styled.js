@@ -49,7 +49,7 @@ export const StyledHero = styled.div `
             
             .jap__text2 {
                 right: 5%;
-                bottom: 2%;
+                bottom: 5%;
             }
         }
         .hero__container {
@@ -87,6 +87,12 @@ export const StyledHero = styled.div `
                             border-radius: 2rem;
                             color: white;
                             font-weight: 600;
+                            transition: .3s ease-in-out;
+
+                            &:hover {
+                                transform: scale(1.1);
+                                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                            }
                         }
                         .branchBtn {
                             background: rgba(43, 44, 57, 0);
@@ -151,6 +157,8 @@ export const StyledHero = styled.div `
                 "footer"
                 "left"
             ;
+            height: auto;
+
 
             .left__container {
                 display: none;
