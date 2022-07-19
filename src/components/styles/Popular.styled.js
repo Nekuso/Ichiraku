@@ -44,46 +44,47 @@ export const StyledPopular = styled.div `
 
         .popular__carousel {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
             max-width: 70vw;
-            margin: 1rem auto;
+            margin: 2rem auto;
             width: 100%;
-            height: 350px;
+            height: 300px;
             gap: 10px;
-            background: red;
-            overflow: hidden;
+            // background: red;
 
             .popular__item {
                 cursor: pointer;
                 display: grid;
-                width: 200px;
-                height: 270px;
+                justify-content: center;
+                width: 280px;
+                height: 350px;
                 padding: 1rem;
                 background: #353646;
                 border-radius: 2rem;
                 transition: .3s ease-in-out;
                 
                 img {
-                    width: 100%;
+                    width: 80%;
+                    margin: 0 auto;
                 }
                 
                 .item__name {
                     display: block;
                     text-align: center;
                     color: #FFFFFF;
-                    font-size: 1.4vw;
+                    font-size: 1.7vw;
                 }
                 
                 p {
                     color: #FFFFFF;
                     text-spacing: 20px;
                     letter-spacing: 1px;
+                    font-size: 1.3vw;
                 }
 
                 .item__info__container {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-around;
                     align-items: center;
                     
                     .info__left {
@@ -106,11 +107,9 @@ export const StyledPopular = styled.div `
         }
     }
 
-    .slick-slide {
-        margin: 0 5px;
+    @media screen and (max-width: 768px) {
+        
     }
-    /* the parent */
-    .slick-list {
-        margin: 0 -5px;
-    }
+
+
 `
