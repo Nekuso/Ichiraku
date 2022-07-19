@@ -45,7 +45,7 @@ export const StyledPopular = styled.div `
         .popular__carousel {
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
             max-width: 70vw;
             margin: 1rem auto;
             width: 100%;
@@ -54,11 +54,10 @@ export const StyledPopular = styled.div `
             background: red;
             overflow: hidden;
 
-
             .popular__item {
                 cursor: pointer;
                 display: grid;
-                flex: 0 0 20%;
+                width: 200px;
                 height: 270px;
                 padding: 1rem;
                 background: #353646;
