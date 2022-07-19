@@ -41,5 +41,69 @@ export const StyledPopular = styled.div `
                 }
             }
         }
+
+        .popular__carousel {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 70vw;
+            margin: 1rem auto;
+            width: 100%;
+            height: 350px;
+            gap: 10px;
+            background: red;
+            overflow: hidden;
+
+
+            .popular__item {
+                cursor: pointer;
+                display: grid;
+                flex: 0 0 20%;
+                height: 270px;
+                padding: 1rem;
+                background: #353646;
+                border-radius: 2rem;
+                transition: .3s ease-in-out;
+                
+                img {
+                    width: 100%;
+                }
+                
+                .item__name {
+                    display: block;
+                    text-align: center;
+                    color: #FFFFFF;
+                    font-size: 1.4vw;
+                }
+                
+                p {
+                    color: #FFFFFF;
+                    text-spacing: 20px;
+                    letter-spacing: 1px;
+                }
+
+                .item__info__container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    .info__left {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        
+                        img {
+                            width: 1.5rem;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background: #676884;
+                    transform: scale(1.1);
+                    box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+                }
+            }
+        }
     }
 `
