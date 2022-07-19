@@ -33,7 +33,7 @@ export const StyledPopular = styled.div `
                 color: #FFFF;
                 border-radius: 2rem;
                 text-transform: uppercase;
-                transition: .4s ease-in-out;
+                transition: .3s ease-in-out;
 
                 &:hover {
                     background: #51526A;

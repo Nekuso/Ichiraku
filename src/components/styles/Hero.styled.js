@@ -14,6 +14,7 @@ export const StyledHero = styled.div `
         "left footer footer";
         justify-content: center;
         height: 670px;
+        max-height: 670px;
         width: 100%;
 
         .left__container {
@@ -105,6 +106,7 @@ export const StyledHero = styled.div `
 
                 img {
                     width: 40%;
+                    height: 100%;
                 }
             }
         }
