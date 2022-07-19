@@ -105,4 +105,12 @@ export const StyledPopular = styled.div `
             }
         }
     }
+
+    .slick-slide {
+        margin: 0 5px;
+    }
+    /* the parent */
+    .slick-list {
+        margin: 0 -5px;
+    }
 `

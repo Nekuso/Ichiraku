@@ -1,10 +1,20 @@
 import React from "react";
 import { StyledPopular } from './styles/Popular.styled';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import {categories, data} from '../data'
-import { motion } from "framer-motion";
 import Star from '../img/star.png';
+import Slider from "react-slick";
 
 const Popular = () => {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    };
 
     return (
         <StyledPopular>
@@ -19,24 +29,26 @@ const Popular = () => {
                 </div>
 
                 <div className="popular__carousel">
-                    {
-                        data.map(item =>(
-                            <div 
-                                key={item.id} 
-                                className="popular__item">
+                    <Slider {...settings}>
+                        {
+                            data.map(item =>(
+                                <div 
+                                    key={item.id} 
+                                    className="popular__item">
 
-                                <img src={item.img} alt="Something delicius" />
-                                <h2 className="item__name">{item.name}</h2>
-                                <div className="item__info__container">
-                                    <div className="info__left">
-                                        <img src={Star} alt="star" />
-                                        <p>{item.rating}</p>
+                                    <img src={item.img} alt="Something delicius" />
+                                    <h2 className="item__name">{item.name}</h2>
+                                    <div className="item__info__container">
+                                        <div className="info__left">
+                                            <img src={Star} alt="star" />
+                                            <p>{item.rating}</p>
+                                        </div>
+                                        <p>P{item.price}</p>
                                     </div>
-                                    <p>P{item.price}</p>
                                 </div>
-                            </div>
-                        ))
-                    }
+                            ))
+                        }
+                    </Slider>
                 </div>
             </div>
         </StyledPopular>
