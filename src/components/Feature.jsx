@@ -48,6 +48,8 @@ const Feature = () => {
                         </div>
                     </div>
                 </div>
+
+                <h2 className="center__discover">DISCOVER</h2>
             </div>
         </StyledFeature>
     );

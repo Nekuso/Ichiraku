@@ -204,13 +204,13 @@ export const StyledPopular = styled.div `
         .popular__section {
 
             .jap__text1 {
-                bottom: 10px;
+                bottom: 15px;
                 left: 10px;
-                font-size: 3vw;
+                font-size: 3.5vw;
             }
 
             .jap__text2 {
-                top: 10px;
+                top: 15px;
                 right: 10px;
                 font-size: 4vw;
             }
@@ -241,6 +241,7 @@ export const StyledPopular = styled.div `
 
                     .item__name {
                         font-size: 2.1vw;
+                        padding: .5rem 0;
                     }
                     
                     p {
@@ -254,6 +255,7 @@ export const StyledPopular = styled.div `
                         .vl {
                             height: .7rem;
                         }
+
                         .info__left {
                             img {
                                 width: .4rem;
