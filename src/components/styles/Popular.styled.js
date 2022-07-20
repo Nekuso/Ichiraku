@@ -16,6 +16,7 @@ export const StyledPopular = styled.div `
             writing-mode: vertical-rl;
             text-orientation: mixed;
             color: #ffffff5b;
+            letter-spacing: 5px;
         }
         
         .jap__text2 {
@@ -26,6 +27,7 @@ export const StyledPopular = styled.div `
             writing-mode: vertical-rl;
             text-orientation: mixed;
             color: #ffffff5b;
+            letter-spacing: 5px;
         }
         
         .popular__text {

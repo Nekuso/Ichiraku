@@ -48,6 +48,7 @@ export const StyledFeature = styled.div `
                 text-orientation: mixed;
                 color: #FFFF;
                 font-size: 3rem;
+                letter-spacing: 5px;
             }
             
             .left {
@@ -97,6 +98,19 @@ export const StyledFeature = styled.div `
 
     @media screen and (max-width: 768px) {
         .feature__section {
+            height: 570px;
+
+            .center__discover {
+                font-size: .7rem;
+                width: 120px;
+                height: 120px;
+            }
+
+            .feature__img {
+                h2 {
+                    font-size: 5vw;
+                }
+            }
 
             .feature__info {
                 .feature {
