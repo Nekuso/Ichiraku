@@ -95,4 +95,79 @@ export const StyledFeature = styled.div `
         }
     }
 
+    @media screen and (max-width: 768px) {
+        .feature__section {
+
+            .feature__info {
+                .feature {
+                    h3 {
+                        font-size: 1.5vw;
+                    }
+                    h2 {
+                        font-size: 3.5vw;
+                    }
+                    p,i {
+                        font-size: 1.5vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .feature__section {
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 25% 25% 25%;
+            height: auto;
+
+            grid-template-areas: 
+                "grid1"
+                "grid2"
+                "grid3"
+                "grid4"
+            ;
+
+            .grid1 {
+                grid-area: grid1;
+            }
+            .grid2 {
+                grid-area: grid2;
+            }
+            .grid3 {
+                grid-area: grid3;
+            }
+            .grid4 {
+                grid-area: grid4;
+            }
+
+            .center__discover {
+                display: none;
+            }
+
+            .feature__container {
+                padding: 2rem 0;
+            }
+
+            .feature__img {
+                h2 {
+                    font-size: 7.5vw;
+                }
+            }
+
+            .feature__info {
+                .feature {
+                    h3 {
+                        font-size: 4.5vw;
+                    }
+                    h2 {
+                        font-size: 7.5vw;
+                    }
+                    p,i {
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+
 `

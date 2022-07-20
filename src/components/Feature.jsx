@@ -7,7 +7,7 @@ const Feature = () => {
     return (
         <StyledFeature>
             <div className="feature__section">
-                <div className="feature__container feature__info">
+                <div className="feature__container feature__info grid1">
                     <div className="feature">
                         <h3>What's Trending / トレンド</h3>
                         <h2>Japanese Ramen</h2>
@@ -26,15 +26,15 @@ const Feature = () => {
                         </div>
                     </div>
                 </div>
-                <div className="feature__container feature__img">
+                <div className="feature__container feature__img grid2">
                     <img src={Feature1} alt="" />
                     <h2 className="left">おにぎり</h2>
                 </div>
-                <div className="feature__container feature__img right">
+                <div className="feature__container feature__img grid4">
                     <img src={Feature2} alt="" />
                     <h2 className="right">中華餃子</h2>
                 </div>
-                <div className="feature__container feature__info">
+                <div className="feature__container feature__info grid3">
                     <div className="feature">
                         <h3>What's Trending / トレンド</h3>
                         <h2>Japanese Drinks</h2>
