@@ -51,12 +51,16 @@ const Popular = () => {
                                         <img src={Star} alt="star" />
                                         <p>{item.rating}</p>
                                     </div>
+                                    <div className="vl"></div>
                                     <p>P{item.price}</p>
                                 </div>
                             </div>
                         ))
                     }
                 </div>
+
+                <h2 className="jap__text1">人気の食べ物</h2>
+                <h2 className="jap__text2">人気の食べ物</h2>
             </div>
         </StyledPopular>
     );

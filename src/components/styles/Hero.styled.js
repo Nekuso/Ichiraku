@@ -221,7 +221,7 @@ export const StyledHero = styled.div `
     @media screen and (max-width: 425px) {
         .hero__section {
             grid-template-columns: 100%;
-            grid-template-rows: 450px 100px;
+            grid-template-rows: 400px 100px;
             grid-template-areas: 
                 "main"
                 "footer"
@@ -234,13 +234,13 @@ export const StyledHero = styled.div `
                     grid-template-areas: 
                         "img"
                         "text";
-                    justify-content:center;
-                    align-items:center;
+                    justify-content: center;
+                    align-items: center;
                     margin: 0 auto;
 
                     .hero__text {
                         display: grid;
-                        justify-content:center;
+                        justify-content: center;
                         text-align: center;
                         h2 {
                             font-size: 6.1vw;
@@ -250,7 +250,7 @@ export const StyledHero = styled.div `
                         }
                         
                         .buttons {
-                            justify-content:center;
+                            justify-content: center;
                             a {
                                 font-size: 3vw;
                                 padding: .8rem 1.1rem;
