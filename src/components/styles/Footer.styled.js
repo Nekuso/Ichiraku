@@ -1,5 +1,5 @@
-import styled from  'styled-components';
+import styled from 'styled-components';
 
-const StyledFooter = styled.div `
+export const StyledFooter = styled.div `
 
 `

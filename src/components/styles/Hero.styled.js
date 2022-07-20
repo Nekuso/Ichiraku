@@ -1,4 +1,4 @@
-import styled from  'styled-components';
+import styled from 'styled-components';
 import Left from '../../img/Left.png';
 import Left2 from '../../img/Left2.png';
 import Left3 from '../../img/Left3.png';
