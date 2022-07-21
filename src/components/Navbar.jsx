@@ -26,7 +26,6 @@ const Navbar = () => {
                 <a href="/">
                     <img src={Brand} alt="brand" />
                 </a>
-
             </div>
 
             <ul className={navActive}>

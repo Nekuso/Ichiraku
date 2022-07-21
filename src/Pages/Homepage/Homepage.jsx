@@ -3,9 +3,9 @@ import Hero from '../../components/Hero';
 import About from '../../components/About';
 import Popular from '../../components/Popular';
 import Feature from '../../components/Feature';
+import Footer from '../../components/Footer';
 
 const Homepage = () => {
-
 
     return (
         <>
@@ -13,6 +13,7 @@ const Homepage = () => {
             <About/>
             <Popular/>
             <Feature/>
+            <Footer/>
         </>
     );
 }

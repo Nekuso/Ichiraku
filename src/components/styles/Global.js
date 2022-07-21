@@ -9,12 +9,13 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         -webkit-tap-highlight-color: transparent;
         font-family: 'Montserrat';
-        color: #000000
+        color: #000000;
     }
 
     body {
         overflow-x: hidden;
     }
+
 `
 
 export default GlobalStyles;
