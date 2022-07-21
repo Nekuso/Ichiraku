@@ -46,7 +46,7 @@ const Navbar = () => {
                 initial="hidden"
                 animate="visible"
                 >
-                <a href="/">
+                <a href="/ichiraku">
                     <img src={Brand} alt="brand" />
                 </a>
             </motion.div>
