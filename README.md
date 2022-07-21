@@ -2,8 +2,7 @@
     <img height="auto" width="auto" src="/src/img/Brand.png"/>
 </p>
 
-# Ichiraku 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+# [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 
 - Live Site URL: [https://nekuso.github.io/ichiraku](https://nekuso.github.io/ichiraku)
