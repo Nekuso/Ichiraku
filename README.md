@@ -1,4 +1,6 @@
-<img align="center" src="/src/img/Brand.png"/>
+<p align="center">
+    <img height="auto" width="auto" src="/src/img/Brand.png"/>
+</p>
 
 # Ichiraku 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -11,7 +13,7 @@
 - Developed first with the Mobile First methodology, then for desktop.
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Sategorized by noodle categories
+- Categorized by noodle categories
 
 ![preview img](/preview.png)
 ![preview img](/preview2.png)
