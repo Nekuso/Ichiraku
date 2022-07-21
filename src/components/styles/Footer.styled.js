@@ -68,6 +68,11 @@ export const StyledFooter = styled.div `
                             padding: 1rem .6rem;
                             background: #424258;
                             color: #FFFF;
+                            transition: .3s ease-in-out;
+
+                            &:hover {
+                                transform: scale(104%);
+                            }
                         }
                     }
                 }
