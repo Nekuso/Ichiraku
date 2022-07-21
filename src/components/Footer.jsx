@@ -37,9 +37,9 @@ const Footer = () => {
                     </ul>
 
                     <div className="socials">
-                        <i class='bx bxl-facebook-circle'></i>
-                        <i class='bx bxl-instagram'></i>
-                        <i class='bx bxl-twitter' ></i>
+                        <i className='bx bxl-facebook-circle'></i>
+                        <i className='bx bxl-instagram'></i>
+                        <i className='bx bxl-twitter' ></i>
                     </div>
 
                 </div>

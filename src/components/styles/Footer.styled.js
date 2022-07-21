@@ -75,13 +75,21 @@ export const StyledFooter = styled.div `
         }
 
         .footer__container {
-            display: flex;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
             justify-content: space-around;
             align-items: center;
-            background: red;
+            background: #424258;
 
             .brand__logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
                 a {
+                    display: flex;
+                    justify-content: center;
                     img {
                         width: 50%;
                     }
@@ -90,6 +98,7 @@ export const StyledFooter = styled.div `
 
             .links {
                 display: flex;
+                justify-content: center;
                 gap: 3vw;
                 li {
                     font-size: 1.2vw;
@@ -102,6 +111,7 @@ export const StyledFooter = styled.div `
             .socials {
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 gap: 1vw;
                 
                 i {
@@ -144,6 +154,45 @@ export const StyledFooter = styled.div `
                     }
                 }
             }
+
+            .footer__container {
+                grid-template-columns: 30% 40% 30%;
+                .brand__logo {
+                    width: 100%;
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            width: 60%;
+                        }
+                    }
+                }
+    
+                .links {
+                    display: flex;
+                    justify-content: center;
+                    gap: 3vw;
+                    li {
+                        font-size: 1.8vw;
+                        a {
+                            color: #FFFF;
+                        }
+                    }
+                }
+                
+                .socials {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2vw;
+                    
+                    i {
+                        cursor: pointer;
+                        color: #FFFF;
+                        font-size: 3vw;
+                    }
+                }
+            }
         }
     }
 
@@ -176,6 +225,45 @@ export const StyledFooter = styled.div `
                                 font-size: 2.5vw;
                             }
                         }
+                    }
+                }
+            }
+
+            .footer__container {
+                grid-template-columns: 30% 40% 30%;
+                .brand__logo {
+                    width: 100%;
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            width: 60%;
+                        }
+                    }
+                }
+    
+                .links {
+                    display: flex;
+                    justify-content: center;
+                    gap: 3vw;
+                    li {
+                        font-size: 1.8vw;
+                        a {
+                            color: #FFFF;
+                        }
+                    }
+                }
+                
+                .socials {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2vw;
+                    
+                    i {
+                        cursor: pointer;
+                        color: #FFFF;
+                        font-size: 3vw;
                     }
                 }
             }
