@@ -2,11 +2,32 @@ import React from 'react';
 import HeroImg from '../img/Hero.png';
 import Owner from '../img/Owner.png';
 import { StyledHero } from './styles/Hero.styled';
+import {motion} from 'framer-motion';
 
 const Hero = () => {
+    const HomeVariants = {
+        hidden: {
+            opacity: 0,
+        },
+
+        visible: {
+            opacity: 1,
+            transition: {
+                type: 'spring', 
+                stiffness: 100, 
+                delay: 1, 
+                duration: 1
+            }
+        }
+    }
+
     return (
         <StyledHero>
-                <div className="hero__section">
+                <motion.div 
+                    variants={HomeVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="hero__section">
                     <div className="left__container">
                         <div className="left__img"/>
                         <h2 className="jap__text1">ラーメンは最大の喜びです</h2>
@@ -40,7 +61,7 @@ const Hero = () => {
                         </div>
                     </div>
 
-                </div>
+                </motion.div>
             </StyledHero>
     )
 }

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import Brand from '../img/Brand.png';
 import { StyledNavbar } from './styles/Navbar.styled';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
 
@@ -20,29 +21,60 @@ const Navbar = () => {
 
     }
 
+    const navVariants = {
+        hidden: {
+            opacity: 0,
+            y: '-1vh'
+        },
+
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: 'spring', 
+                stiffness: 100, 
+                delay: 1.5, 
+                duration: 2
+            }
+        }
+    }
+
     return (
+
         <StyledNavbar>
-            <div className="brand__logo">
+            <motion.div 
+                className="brand__logo"
+                variants={navVariants}
+                initial="hidden"
+                animate="visible"
+                >
                 <a href="/">
                     <img src={Brand} alt="brand" />
                 </a>
-            </div>
+            </motion.div>
 
-            <ul className={navActive}>
+            <motion.ul 
+                className={navActive}
+                variants={navVariants}
+                initial="hidden"
+                animate="visible">
                 <li><Link to="/" className="Link" onClick={navToggle}>HOME</Link></li>
                 <li><Link to="/" className="Link" onClick={navToggle}>MENU</Link></li>
                 <li><Link to="/" className="Link" onClick={navToggle}>SERVICE</Link></li>
                 <li><Link to="/" className="Link" onClick={navToggle}>ABOUT US</Link></li>
-            </ul>
+            </motion.ul>
 
-            <button style={{
+            <motion.button style={{
                 position: btnHam && "fixed",
                 top: btnHam && 35,
-                right: btnHam && 35,}} onClick={navToggle} className={btnActive}>
+                right: btnHam && 35,}} onClick={navToggle} className={btnActive}
+                variants={navVariants}
+                initial="hidden"
+                animate="visible">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </motion.button>
         </StyledNavbar>
     );
 }
