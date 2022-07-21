@@ -53,6 +53,7 @@ const Homepage = () => {
             className="cursor"
             variants={variants}
             animate={cursorVariant}></motion.div>
+            
             <Hero textEnter={textEnter} textLeave={textLeave}/>
             <About textEnter={textEnter} textLeave={textLeave}/>
             <Popular textEnter={textEnter} textLeave={textLeave}/>
