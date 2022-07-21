@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-            <Route path="/" element={<Homepage/>}/>
+            <Route path="/ichiraku" element={<Homepage/>}/>
           </Routes>
         </div>
     </BrowserRouter>
