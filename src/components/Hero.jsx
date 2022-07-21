@@ -15,7 +15,6 @@ const Hero = () => {
             transition: {
                 type: 'spring', 
                 stiffness: 100, 
-                delay: 1, 
                 duration: 1
             }
         }
@@ -46,7 +45,7 @@ const Hero = () => {
                             variants={secondVariants}
                             initial="hidden"
                             animate="visible"
-                            transition={{delay: 1.2, duration: 1}}
+                            transition={{duration: 1}}
                             className="jap__text1"
                         >
                             ラーメンは最大の喜びです
@@ -55,7 +54,7 @@ const Hero = () => {
                         variants={secondVariants}
                         initial="hidden"
                         animate="visible"
-                        transition={{delay: 1.5, duration: 1}}
+                        transition={{duration: 1}}
                         className="jap__text2"
                         >
                             一楽
@@ -65,7 +64,7 @@ const Hero = () => {
                     <motion.div 
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
-                        transition={{delay: 1.5, duration: 1}}
+                        transition={{duration: 1}}
                         className="hero__container">
                         <div
                         className="hero">
@@ -73,7 +72,7 @@ const Hero = () => {
                             variants={secondVariants}
                             initial="hidden"
                             animate="visible"
-                            transition={{delay: 2, duration: 1}}
+                            transition={{duration: 1}}
                             className="hero__text">
                                 <h2>Japanese Authentic <br/>Noodle Restaurant</h2>
                                 <p>Ramen is the best pleasure</p>
@@ -86,7 +85,7 @@ const Hero = () => {
                             <motion.img 
                             initial={{opacity: 0, x: "10vw"}}
                             animate={{opacity: 1, x: "0"}}
-                            transition={{delay: 2.2, duration: 1}}
+                            transition={{duration: 1}}
                             src={HeroImg} alt="" />
                         </div>
                     </motion.div>
@@ -94,13 +93,13 @@ const Hero = () => {
                     <motion.div 
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
-                        transition={{delay: 1.5, duration: 1}}
+                        transition={{duration: 1}}
                         className="bottom__container">
                         <motion.div
                         variants={secondVariants}
                         initial="hidden"
                         animate="visible"
-                        transition={{delay: 2.4, duration: 1}}
+                        transition={{duration: 1}}
                         className="left__text">
                             <h3>39k+</h3>
                             <p>Satisfied<br/>Costumers</p>
@@ -110,7 +109,7 @@ const Hero = () => {
                         variants={secondVariants}
                         initial="hidden"
                         animate="visible"
-                        transition={{delay: 2.6, duration: 1}}
+                        transition={{duration: 1}}
                         className="right__text">
                             <img src={Owner} alt="Owner"/>
                             <p>"This is the best Authentic<br/>Japanese Restaurant I have<br/>experienced"</p>

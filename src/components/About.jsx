@@ -10,7 +10,7 @@ import { useAnimation } from 'framer-motion';
 const About = () => {
 
     const {ref, inView} = useInView({
-        threshold: 0.1
+        threshold: 0.5
     });
 
     const animateSection = useAnimation();
@@ -18,7 +18,6 @@ const About = () => {
     const animation2 = useAnimation();
 
     useEffect(() => {
-        console.log('inView', inView)
         if(inView) {
             animateSection.start("visible");
             animation.start("visibleLeft")
@@ -29,7 +28,7 @@ const About = () => {
             animation.start("hiddenLeft")
             animation2.start("hiddenBottom")
         }
-    }, [animation,animation2,inView]);
+    }, [animateSection,animation,animation2,inView]);
 
     const AboutVariants = {
 
@@ -40,7 +39,6 @@ const About = () => {
         visible: {
             opacity: 1,
             transition: {
-                delay: .5, 
                 duration: .5
             }
         },
@@ -54,7 +52,6 @@ const About = () => {
             opacity: 1,
             x: 0,
             transition: {
-                delay: .6, 
                 duration: .5
             }
         },
@@ -67,7 +64,7 @@ const About = () => {
             opacity: 1,
             y: 0,
             transition: {
-                delay: .9, 
+                delay: 0.3,
                 duration: .5
             }
         }

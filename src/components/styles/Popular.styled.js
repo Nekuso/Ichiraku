@@ -85,7 +85,6 @@ export const StyledPopular = styled.div `
                 background: #353646;
                 border-radius: 2rem;
                 transform: scale(100%);
-                transition: .3s ease-in-out;
                 
                 img {
                     width: 80%;
@@ -125,16 +124,6 @@ export const StyledPopular = styled.div `
                         width: 2px;
                         height: 1.5rem;
                         background: #6b6d8d;
-                    }
-                }
-
-                &:hover {
-                    background: #676884;
-                    transform: scale(105%);
-                    box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
-
-                    .vl {
-                        background: #bfc2f3;
                     }
                 }
             }

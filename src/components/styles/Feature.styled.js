@@ -68,6 +68,7 @@ export const StyledFeature = styled.div `
             width: auto;
             
             .feature {
+                background:none;
                 width: 100%;
                 h3 {
                     font-size: 1vw;

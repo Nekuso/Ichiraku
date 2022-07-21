@@ -33,7 +33,6 @@ const Navbar = () => {
             transition: {
                 type: 'spring', 
                 stiffness: 100, 
-                delay: 1.5, 
                 duration: 2
             }
         }

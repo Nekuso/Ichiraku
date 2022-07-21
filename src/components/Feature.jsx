@@ -2,12 +2,80 @@ import React from 'react';
 import {StyledFeature} from './styles/Feature.styled';
 import Feature1 from '../img/Feature1.png';
 import Feature2 from '../img/Feature2.png';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+import { useAnimation, motion } from 'framer-motion'; 
 
 const Feature = () => {
+
+    const animation1 = useAnimation();
+    const animation2 = useAnimation();
+    const animation3 = useAnimation();
+    const animation4 = useAnimation();
+    const {ref, inView} = useInView({
+        threshold: 0.3
+    })
+
+    useEffect(() => {
+        console.log("inView= ", inView);
+        if(inView) {
+            animation1.start("visibleBottom");
+            animation2.start("visibleLeftRight");
+            animation3.start("visibleLeftRight");
+            animation4.start("visibleCenter");
+        }
+        if(!inView) {
+            animation1.start("hiddenBottom");
+            animation2.start("hiddenLeft");
+            animation3.start("hiddenRight");
+            animation4.start("hiddenCenter");
+        }
+    }, [animation1,animation2,animation3,animation4,inView])
+
+    const FeatureVariants = {
+        hiddenBottom: {
+            opacity: 0,
+        },
+        
+        visibleBottom: {
+            opacity: 1,
+            transition: {duration: 2}
+        },
+
+        hiddenLeft: {
+            opacity: 0,
+            x: "20vw"
+        },
+        
+        hiddenRight: {
+            opacity: 0,
+            x: "-20vw"
+        },
+
+        visibleLeftRight: {
+            opacity: 1,
+            x: 0,
+            transition: {duration: 1.5}
+        },
+
+        hiddenCenter: {
+            opacity: 0,
+        },
+        
+        visibleCenter: {
+            opacity: 1,
+            transition: {duration: 2}
+        }
+    }
+
     return (
         <StyledFeature>
-            <div className="feature__section">
-                <div className="feature__container feature__info grid1">
+            <div ref={ref}className="feature__section">
+                <motion.div
+                    variants={FeatureVariants}
+                    initial="hiddenBottom"
+                    animate={animation1}
+                    className="feature__container feature__info grid1">
                     <div className="feature">
                         <h3>What's Trending / トレンド</h3>
                         <h2>Japanese Ramen</h2>
@@ -25,16 +93,30 @@ const Feature = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div className="feature__container feature__img grid2">
+                </motion.div>
+
+                <motion.div 
+                    variants={FeatureVariants}
+                    initial="hiddenLeft"
+                    animate={animation2}
+                    className="feature__container feature__img grid2">
                     <img src={Feature1} alt="" />
                     <h2 className="left">おにぎり</h2>
-                </div>
-                <div className="feature__container feature__img grid4">
+                </motion.div>
+                <motion.div 
+                    variants={FeatureVariants}
+                    initial="hiddenRight"
+                    animate={animation3}
+                    className="feature__container feature__img grid4">
                     <img src={Feature2} alt="" />
                     <h2 className="right">中華餃子</h2>
-                </div>
-                <div className="feature__container feature__info grid3">
+                </motion.div>
+                
+                <motion.div
+                    variants={FeatureVariants}
+                    initial="hiddenBottom"
+                    animate={animation1}
+                    className="feature__container feature__info grid3">
                     <div className="feature">
                         <h3>What's Trending / トレンド</h3>
                         <h2>Japanese Drinks</h2>
@@ -47,9 +129,13 @@ const Feature = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <h2 className="center__discover">DISCOVER</h2>
+                <motion.h2 
+                variants={FeatureVariants}
+                initial="hiddenCenter"
+                animate={animation4}
+                className="center__discover">DISCOVER</motion.h2>
             </div>
         </StyledFeature>
     );
