@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyledFooter } from './styles/Footer.styled';
 import Brand from '../img/Brand.png';
-import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion'; 
@@ -98,16 +97,17 @@ const Footer = ({textEnter, textLeave}) => {
                     </div>
 
                     <ul className="links">
-                        <li><Link to="/" className="Link">HOME</Link></li>
-                        <li><Link to="/" className="Link">MENU</Link></li>
-                        <li><Link to="/" className="Link">SERVICE</Link></li>
-                        <li><Link to="/" className="Link">ABOUT US</Link></li>
+                    <li><a href='/ichiraku/#Hero' className="Link">HOME</a></li>
+                <li><a href='/ichiraku/#Popular' className="Link">POPULAR</a></li>
+                <li><a href='/ichiraku/#Feature' className="Link">SERVICE</a></li>
+                <li><a href='/ichiraku/#About' className="Link">ABOUT US</a></li>
                     </ul>
 
                     <div className="socials">
-                        <i className='bx bxl-facebook-circle'></i>
-                        <i className='bx bxl-instagram'></i>
-                        <i className='bx bxl-twitter' ></i>
+                        <a href="https://www.facebook.com/Ichiraku.Dumaguete" rel="noopener noreferrer" target="_blank"><i className='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.instagram.com/ichirakudumaguete" rel="noopener noreferrer" target="_blank"><i className='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com/i/web/status/1527891947632750592" rel="noopener noreferrer" target="_blank"><i className='bx bxl-twitter' ></i></a>
+                        <a href="https://github.com/Nekuso" rel="noopener noreferrer" target="_blank"><i className='bx bxl-github'></i></a>
                     </div>
 
                 </div>
