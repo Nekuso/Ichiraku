@@ -117,7 +117,12 @@ export const StyledFooter = styled.div `
                 i {
                     cursor: pointer;
                     color: #FFFF;
-                    font-size: 2vw;
+                    font-size: 2.5vw;
+                    transition: .3s ease-in-out;
+                    
+                    &:hover {
+                        transform: translateY(-10px);
+                    }
                 }
             }
         }
