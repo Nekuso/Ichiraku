@@ -21,6 +21,18 @@ const Hero = () => {
         }
     }
 
+    const secondVariants = {
+        hidden: {
+            opacity: 0,
+            y: "10vh"
+        },
+        
+        visible: {
+            opacity: 1,
+            y: "0vh",
+        }
+    }
+
     return (
         <StyledHero>
                 <motion.div 
@@ -30,13 +42,39 @@ const Hero = () => {
                     className="hero__section">
                     <div className="left__container">
                         <div className="left__img"/>
-                        <h2 className="jap__text1">ラーメンは最大の喜びです</h2>
-                        <h2 className="jap__text2">一楽</h2>
+                        <motion.h2 
+                            variants={secondVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{delay: 1.2, duration: 1}}
+                            className="jap__text1"
+                        >
+                            ラーメンは最大の喜びです
+                        </motion.h2>
+                        <motion.h2 
+                        variants={secondVariants}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{delay: 1.5, duration: 1}}
+                        className="jap__text2"
+                        >
+                            一楽
+                        </motion.h2>
                     </div>
 
-                    <div className="hero__container">
-                        <div className="hero">
-                            <div className="hero__text">
+                    <motion.div 
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{delay: 1.5, duration: 1}}
+                        className="hero__container">
+                        <div
+                        className="hero">
+                            <motion.div 
+                            variants={secondVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{delay: 2, duration: 1}}
+                            className="hero__text">
                                 <h2>Japanese Authentic <br/>Noodle Restaurant</h2>
                                 <p>Ramen is the best pleasure</p>
 
@@ -44,22 +82,40 @@ const Hero = () => {
                                     <a href="/">Explore →</a>
                                     <a href="/" className="branchBtn">Branches</a>
                                 </div>
-                            </div>
-                            <img src={HeroImg} alt="" />
+                            </motion.div>
+                            <motion.img 
+                            initial={{opacity: 0, x: "10vw"}}
+                            animate={{opacity: 1, x: "0"}}
+                            transition={{delay: 2.2, duration: 1}}
+                            src={HeroImg} alt="" />
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="bottom__container">
-                        <div className="left__text">
+                    <motion.div 
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{delay: 1.5, duration: 1}}
+                        className="bottom__container">
+                        <motion.div
+                        variants={secondVariants}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{delay: 2.4, duration: 1}}
+                        className="left__text">
                             <h3>39k+</h3>
                             <p>Satisfied<br/>Costumers</p>
-                        </div>
+                        </motion.div>
                         <div className="vl"></div>
-                        <div className="right__text">
+                        <motion.div 
+                        variants={secondVariants}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{delay: 2.6, duration: 1}}
+                        className="right__text">
                             <img src={Owner} alt="Owner"/>
                             <p>"This is the best Authentic<br/>Japanese Restaurant I have<br/>experienced"</p>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                 </motion.div>
             </StyledHero>

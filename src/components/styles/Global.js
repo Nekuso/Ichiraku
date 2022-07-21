@@ -12,6 +12,10 @@ const GlobalStyles = createGlobalStyle`
         color: #000000;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         overflow-x: hidden;
     }
