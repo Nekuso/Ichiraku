@@ -1,4 +1,4 @@
-<img align="center" src="/src/img/brand.png"/>
+<img align="center" src="/src/img/Brand.png"/>
 
 # Ichiraku 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
