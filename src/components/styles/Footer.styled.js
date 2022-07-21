@@ -121,7 +121,7 @@ export const StyledFooter = styled.div `
                     transition: .3s ease-in-out;
                     
                     &:hover {
-                        transform: translateY(-10px);
+                        transform: translateY(-20%);
                     }
                 }
             }

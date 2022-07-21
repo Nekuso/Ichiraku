@@ -2,10 +2,9 @@ import React from 'react';
 import { StyledAbout } from './styles/About.styled';
 import AboutLeft1 from '../img/AboutLeft1.png';
 import AboutLeft2 from '../img/AboutLeft2.png';
-import {motion} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
-import { useAnimation } from 'framer-motion'; 
+import { useAnimation, motion } from 'framer-motion'; 
 
 const About = () => {
 

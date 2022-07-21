@@ -39,7 +39,7 @@ const Feature = () => {
         
         visibleBottom: {
             opacity: 1,
-            transition: {duration: 2}
+            transition: {duration: 1.5}
         },
 
         hiddenLeft: {
@@ -55,7 +55,7 @@ const Feature = () => {
         visibleLeftRight: {
             opacity: 1,
             x: 0,
-            transition: {duration: 1.5}
+            transition: {duration: .5}
         },
 
         hiddenCenter: {
@@ -64,7 +64,7 @@ const Feature = () => {
         
         visibleCenter: {
             opacity: 1,
-            transition: {duration: 2}
+            transition: {duration: .5}
         }
     }
 

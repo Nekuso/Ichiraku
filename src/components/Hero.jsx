@@ -79,7 +79,6 @@ const Hero = () => {
 
                                 <div className="buttons">
                                     <a href="/">Explore →</a>
-                                    <a href="/" className="branchBtn">Branches</a>
                                 </div>
                             </motion.div>
                             <motion.img 
