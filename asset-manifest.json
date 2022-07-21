@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/ichiraku/static/js/main.e5c8663a.js",
+    "static/js/787.b0fdd5f9.chunk.js": "/ichiraku/static/js/787.b0fdd5f9.chunk.js",
+    "static/media/Left2.png": "/ichiraku/static/media/Left2.90bd14b5c8fa299ae1b7.png",
+    "static/media/Left3.png": "/ichiraku/static/media/Left3.70b4100f72975fc14a55.png",
+    "static/media/Hero.png": "/ichiraku/static/media/Hero.1c70806b890bc3e85548.png",
+    "static/media/AboutLeft1.png": "/ichiraku/static/media/AboutLeft1.25433d852e77f34c72ff.png",
+    "static/media/AboutLeft2.png": "/ichiraku/static/media/AboutLeft2.627583ae5c7c67d3de59.png",
+    "static/media/Left.png": "/ichiraku/static/media/Left.ba23055c0cb663e87f7b.png",
+    "static/media/Feature2.png": "/ichiraku/static/media/Feature2.506f4b4468fe2ae06da8.png",
+    "static/media/Feature1.png": "/ichiraku/static/media/Feature1.db7c96be8658f7836338.png",
+    "static/media/Tantanmen.png": "/ichiraku/static/media/Tantanmen.10b55b180fe74778372a.png",
+    "static/media/ShoyuRamen.png": "/ichiraku/static/media/ShoyuRamen.22b24e12ee4c366dedcd.png",
+    "static/media/KuroTonkotsu.png": "/ichiraku/static/media/KuroTonkotsu.e39fdf2d5d94bd5dbab5.png",
+    "static/media/Owner.png": "/ichiraku/static/media/Owner.e9ab7afaf5373a6d6fae.png",
+    "index.html": "/ichiraku/index.html",
+    "main.e5c8663a.js.map": "/ichiraku/static/js/main.e5c8663a.js.map",
+    "787.b0fdd5f9.chunk.js.map": "/ichiraku/static/js/787.b0fdd5f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e5c8663a.js"
+  ]
+}
