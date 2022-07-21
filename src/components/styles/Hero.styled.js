@@ -13,8 +13,9 @@ export const StyledHero = styled.div `
         "left main main"
         "left footer footer";
         justify-content: center;
-        height: 670px;
-        max-height: 670px;
+        height: 100vh;
+        // height: 670px;
+        // max-height: 670px;
         width: 100%;
         background-color: #FFFF;
 
@@ -46,7 +47,6 @@ export const StyledHero = styled.div `
                 text-orientation: mixed;
                 left: 5%;
                 bottom: 10%;
-                font-size: 2rem;
             }
             
             .jap__text2 {
@@ -287,6 +287,48 @@ export const StyledHero = styled.div `
                     p {
                         font-size: 2.4vw;
                         color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1100px) {
+        .hero__section {
+            .left__container {
+                h2 {
+                    font-size: 2.1vw;
+                }
+            }
+            .hero__container {
+                .hero {
+                    .hero__text {
+                        .buttons {
+                            a{
+                                padding: 1vw 1.1vw;
+                            }
+                        }
+                    }
+                }
+                .hero {
+                    img {
+                        width: 30%;
+                    }
+                }
+            }
+
+            .bottom__container {
+                .left__text {
+                    h3 {
+                        font-size: 4vw;
+                    }
+                    p{
+                        font-size: 1.1vw;
+                    }
+                }
+                .right__text {
+                    p {
+                        font-size: 1.1vw;
                     }
                 }
             }

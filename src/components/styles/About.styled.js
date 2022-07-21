@@ -6,7 +6,7 @@ export const StyledAbout = styled.div `
     .about__section {
         display: grid;
         grid-template-columns: 25% 75%;
-        height: 670px;
+        height: 100vh;
         width: 100%;
         background: #FFFF;
 

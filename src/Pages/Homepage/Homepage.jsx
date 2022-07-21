@@ -6,6 +6,7 @@ import Feature from '../../components/Feature';
 import Footer from '../../components/Footer';
 import { motion } from 'framer-motion';
 
+
 const Homepage = () => {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
@@ -52,8 +53,7 @@ const Homepage = () => {
             <motion.div 
             className="cursor"
             variants={variants}
-            animate={cursorVariant}></motion.div>
-            
+            animate={cursorVariant}></motion.div>            
             <Hero textEnter={textEnter} textLeave={textLeave}/>
             <About textEnter={textEnter} textLeave={textLeave}/>
             <Popular textEnter={textEnter} textLeave={textLeave}/>

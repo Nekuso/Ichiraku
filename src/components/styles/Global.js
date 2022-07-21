@@ -11,9 +11,10 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Montserrat';
         color: #000000;
     }
-
+    
     html {
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
 
     body {

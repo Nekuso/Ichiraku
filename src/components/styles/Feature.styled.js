@@ -7,7 +7,7 @@ export const StyledFeature = styled.div `
         position: relative;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
-        height: 670px;
+        height: 100vh;
         width: 100%;
         background: #FFFF;
 

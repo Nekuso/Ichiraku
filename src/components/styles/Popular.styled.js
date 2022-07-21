@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const StyledPopular = styled.div `
     .popular__section {
-        height: 670px;
+        height: 100vh;
         width: 100%;
         background: #2B2C39;
         position: relative;
@@ -256,6 +256,37 @@ export const StyledPopular = styled.div `
                 }
             }
         }
+    }
+
+    @media screen and (min-width: 1900px) {
+        .popular__section {
+            .popular__filter {
+                button {
+                    border-radius: 4rem;
+                    padding: 3.5vh 1.5vw;  
+                }
+            }
+
+            .popular__carousel {
+                align-items: center;
+                gap: 2%;
+
+                .popular__item {
+                    border-radius: 3rem;
+                    width: 18vw;
+                    height: 23vw;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    p {
+                        font-size: 1.4vw;
+                    }
+                }
+            }
+        }
+
     }
 
 `

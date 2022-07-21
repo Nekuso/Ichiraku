@@ -56,10 +56,10 @@ const Navbar = () => {
                 variants={navVariants}
                 initial="hidden"
                 animate="visible">
-                <li><a href='#Hero' className="Link" onClick={navToggle}>HOME</a></li>
-                <li><a href='#Popular' className="Link" onClick={navToggle}>POPULAR</a></li>
-                <li><a href='#Feature' className="Link" onClick={navToggle}>SERVICE</a></li>
-                <li><a href='#About' className="Link" onClick={navToggle}>ABOUT US</a></li>
+                <li><a href='/ichiraku/#Hero' className="Link" onClick={navToggle}>HOME</a></li>
+                <li><a href='/ichiraku/#Popular' className="Link" onClick={navToggle}>POPULAR</a></li>
+                <li><a href='/ichiraku/#Feature' className="Link" onClick={navToggle}>SERVICE</a></li>
+                <li><a href='/ichiraku/#About' className="Link" onClick={navToggle}>ABOUT US</a></li>
             </motion.ul>
 
             <motion.button style={{

@@ -90,7 +90,7 @@ const Hero = ({textEnter, textLeave}) => {
                                 onMouseLeave={textLeave}>Ramen is the best pleasure</p>
 
                                 <div className="buttons">
-                                    <a href="/">Explore →</a>
+                                    <a href="/ichiraku/#Feature">Explore →</a>
                                 </div>
                             </motion.div>
                             <motion.img 

@@ -160,4 +160,19 @@ export const StyledNavbar = styled.div `
             background: none;
         }
     }
+
+    @media screen and (min-width: 1100px) {
+        max-width: 90%;
+        .brand__logo {
+            width: 10vw;
+        }
+
+        .nav__links {
+            li{
+                .Link {
+                    font-size: 1.4vw;
+                }
+            }
+        }
+    }
 `

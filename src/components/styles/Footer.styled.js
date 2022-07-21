@@ -7,7 +7,7 @@ export const StyledFooter = styled.div `
         grid-template-rows: 80% 20%;
         background: #2B2C39;
         width: 100%;
-        height: 670px;
+        height: 100vh;
 
         .updates__section {
             display: flex;
