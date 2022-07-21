@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion'; 
 
-const Popular = () => {
+const Popular = ({textEnter, textLeave}) => {
 
     const [currentData, setCurrentData] = useState(miso);
     const animation1 = useAnimation();   
@@ -80,11 +80,13 @@ const Popular = () => {
 
     return (
         <StyledPopular>
-            <div ref={ref} className="popular__section">
+            <div ref={ref} className="popular__section" id="Popular">
                 <motion.h1 
                     variants={PopularVariants}
                     initial="hiddenBottom1"
                     animate={animation1}
+                    onMouseEnter={textEnter} 
+                    onMouseLeave={textLeave} 
                     className="popular__text">
                     Popular foods /人気
                 </motion.h1>
@@ -150,12 +152,16 @@ const Popular = () => {
                     variants={PopularVariants}
                     initial="hiddenLeft"
                     animate={animation4}
-                className="jap__text1">人気の食べ物</motion.h2>
+                    onMouseEnter={textEnter} 
+                    onMouseLeave={textLeave} 
+                    className="jap__text1">人気の食べ物</motion.h2>
                 <motion.h2 
                     variants={PopularVariants}
                     initial="hiddenRight"
                     animate={animation5}
-                className="jap__text2">人気の食べ物</motion.h2>
+                    onMouseEnter={textEnter} 
+                    onMouseLeave={textLeave} 
+                    className="jap__text2">人気の食べ物</motion.h2>
             </div>
         </StyledPopular>
     );

@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion'; 
 
-const About = () => {
+const About = ({textEnter, textLeave}) => {
 
     const {ref, inView} = useInView({
         threshold: 0.5
@@ -75,7 +75,8 @@ const About = () => {
             ref={ref}
             variants="AboutVariants"
             initial="hidden"
-            className="about__section">
+            className="about__section"
+            id="About">
                 <motion.div 
                 variants={AboutVariants}
                 initial="hiddenLeft"
@@ -84,12 +85,18 @@ const About = () => {
 
                     <div className="left__about__container aboutImg">
                         <img src={AboutLeft1} alt="AboutLeft" />
-                        <h2 className="about__left__text">味噌ラーメン</h2>
+                        <h2 
+                        onMouseEnter={textEnter} 
+                        onMouseLeave={textLeave} 
+                        className="about__left__text">味噌ラーメン</h2>
                     </div>
 
                     <div className="aboutImg">
                         <img src={AboutLeft2} alt="AboutLeft" />
-                        <h2 className="about__left__text">とんこつしろ</h2>
+                        <h2 
+                        onMouseEnter={textEnter} 
+                        onMouseLeave={textLeave} 
+                        className="about__left__text">とんこつしろ</h2>
                     </div>
 
                 </motion.div>
@@ -99,8 +106,11 @@ const About = () => {
                 initial="hiddenBottom"
                 animate={animation2}
                 className="about__container">
-                    <div className="about">
-                        <h3>About us / 私たちに関しては</h3>
+                    <div 
+                        onMouseEnter={textEnter} 
+                        onMouseLeave={textLeave} 
+                        className="about">
+                            <h3>About us / 私たちに関しては</h3>
                         <h1>Our mission is to bring<br/>
                             true Japanese flavors<br/>
                             to you.
@@ -111,7 +121,10 @@ const About = () => {
                             dining for our customers.🙏<br/>
                         </p>
                     </div>
-                        <h2 className="jap__bottom">一楽</h2>
+                        <h2 
+                        onMouseEnter={textEnter} 
+                        onMouseLeave={textLeave} 
+                        className="jap__bottom">一楽</h2>
                 </motion.div>
             </motion.div>
         </StyledAbout>

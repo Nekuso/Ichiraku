@@ -223,7 +223,7 @@ export const StyledPopular = styled.div `
 
                 .popular__item {
                     width: 25vw;
-                    height: 130px;
+                    height: 150px;
                     border-radius: 1rem;
 
                     img {

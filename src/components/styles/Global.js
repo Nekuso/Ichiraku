@@ -20,6 +20,24 @@ const GlobalStyles = createGlobalStyle`
         overflow-x: hidden;
     }
 
+    .cursor {
+        background-color: #2B2C39;
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 200;
+    }
+
+    @media (max-width: 768px) {
+        .cursor {
+            display: none;
+        }
+    }
+
 `
 
 export default GlobalStyles;

@@ -4,7 +4,9 @@ import Owner from '../img/Owner.png';
 import { StyledHero } from './styles/Hero.styled';
 import {motion} from 'framer-motion';
 
-const Hero = () => {
+const Hero = ({textEnter, textLeave}) => {
+
+    
     const HomeVariants = {
         hidden: {
             opacity: 0,
@@ -38,7 +40,8 @@ const Hero = () => {
                     variants={HomeVariants}
                     initial="hidden"
                     animate="visible"
-                    className="hero__section">
+                    className="hero__section"
+                    id="Hero">
                     <div className="left__container">
                         <div className="left__img"/>
                         <motion.h2 
@@ -46,6 +49,8 @@ const Hero = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{duration: 1}}
+                            onMouseEnter={textEnter} 
+                            onMouseLeave={textLeave}
                             className="jap__text1"
                         >
                             ラーメンは最大の喜びです
@@ -55,6 +60,8 @@ const Hero = () => {
                         initial="hidden"
                         animate="visible"
                         transition={{duration: 1}}
+                        onMouseEnter={textEnter} 
+                        onMouseLeave={textLeave}
                         className="jap__text2"
                         >
                             一楽
@@ -73,9 +80,14 @@ const Hero = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{duration: 1}}
-                            className="hero__text">
-                                <h2>Japanese Authentic <br/>Noodle Restaurant</h2>
-                                <p>Ramen is the best pleasure</p>
+                            className="hero__text"
+                            >
+                                <h2 
+                                onMouseEnter={textEnter} 
+                                onMouseLeave={textLeave}>Japanese Authentic <br/>Noodle Restaurant</h2>
+                                <p
+                                onMouseEnter={textEnter} 
+                                onMouseLeave={textLeave}>Ramen is the best pleasure</p>
 
                                 <div className="buttons">
                                     <a href="/">Explore →</a>
@@ -99,6 +111,8 @@ const Hero = () => {
                         initial="hidden"
                         animate="visible"
                         transition={{duration: 1}}
+                        onMouseEnter={textEnter} 
+                        onMouseLeave={textLeave}
                         className="left__text">
                             <h3>39k+</h3>
                             <p>Satisfied<br/>Costumers</p>
@@ -111,7 +125,10 @@ const Hero = () => {
                         transition={{duration: 1}}
                         className="right__text">
                             <img src={Owner} alt="Owner"/>
-                            <p>"This is the best Authentic<br/>Japanese Restaurant I have<br/>experienced"</p>
+                            <p
+                            onMouseEnter={textEnter} 
+                            onMouseLeave={textLeave}
+                            >"This is the best Authentic<br/>Japanese Restaurant I have<br/>experienced"</p>
                         </motion.div>
                     </motion.div>
 

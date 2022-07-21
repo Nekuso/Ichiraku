@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
 import Brand from '../img/Brand.png';
 import { StyledNavbar } from './styles/Navbar.styled';
 import { motion } from 'framer-motion';
@@ -57,10 +56,10 @@ const Navbar = () => {
                 variants={navVariants}
                 initial="hidden"
                 animate="visible">
-                <li><Link to="/" className="Link" onClick={navToggle}>HOME</Link></li>
-                <li><Link to="/" className="Link" onClick={navToggle}>MENU</Link></li>
-                <li><Link to="/" className="Link" onClick={navToggle}>SERVICE</Link></li>
-                <li><Link to="/" className="Link" onClick={navToggle}>ABOUT US</Link></li>
+                <li><a href='#Hero' className="Link" onClick={navToggle}>HOME</a></li>
+                <li><a href='#Popular' className="Link" onClick={navToggle}>POPULAR</a></li>
+                <li><a href='#Feature' className="Link" onClick={navToggle}>SERVICE</a></li>
+                <li><a href='#About' className="Link" onClick={navToggle}>ABOUT US</a></li>
             </motion.ul>
 
             <motion.button style={{

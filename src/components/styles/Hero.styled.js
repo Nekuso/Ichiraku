@@ -16,6 +16,7 @@ export const StyledHero = styled.div `
         height: 670px;
         max-height: 670px;
         width: 100%;
+        background-color: #FFFF;
 
         .left__container {
             display: flex;
@@ -65,15 +66,15 @@ export const StyledHero = styled.div `
                 justify-content: space-around;
                 align-items: center;
                 width: 100%;
-
+                
                 .hero__text {
                     h2 {
-                        color: #2B2C39;
+                        // color: #2B2C39;
                         font-size: 3.2vw;
                         margin-bottom: .5rem;
                     }
                     p {
-                        color: #2B2C39;
+                        // color: #2B2C39;
                         font-size: 1.8vw;
                         margin-bottom: 1.5rem;
                     }

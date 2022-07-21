@@ -8,6 +8,7 @@ export const StyledAbout = styled.div `
         grid-template-columns: 25% 75%;
         height: 670px;
         width: 100%;
+        background: #FFFF;
 
         .left__about {
             display: grid;

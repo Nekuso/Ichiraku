@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion'; 
 
 
-const Footer = () => {
+const Footer = ({textEnter, textLeave}) => {
 
     const animation1 = useAnimation();
     const animation2 = useAnimation();
@@ -16,7 +16,6 @@ const Footer = () => {
         threshold: 0.5
     });
     useEffect(() => {
-        console.log("inView= ", inView);
         if(inView) {
             animation1.start("visible1");
             animation2.start("visible2");
@@ -39,19 +38,19 @@ const Footer = () => {
         visible1: {
             opacity: 1,
             y: "0px",
-            transition: {duration: 1, delay: .2}
+            transition: {duration: .5, delay: .2}
         },
 
         visible2: {
             opacity: 1,
             y: "0px",
-            transition: {duration: 1, delay: .4}
+            transition: {duration: .5, delay: .4}
         },
         
         visible3: {
             opacity: 1,
             y: "0px",
-            transition: {duration: 1, delay: .6}
+            transition: {duration: .5, delay: .6}
         }
     }
 
@@ -66,6 +65,8 @@ const Footer = () => {
                                 variants={FooterVariants}
                                 initial="hidden"
                                 animate={animation1}
+                                onMouseEnter={textEnter} 
+                                onMouseLeave={textLeave}
                             >Get updates straight<br/>
                             to your inbox</motion.h1>
 
@@ -73,6 +74,8 @@ const Footer = () => {
                                 variants={FooterVariants}
                                 initial="hidden"
                                 animate={animation2}
+                                onMouseEnter={textEnter} 
+                                onMouseLeave={textLeave}
                             >Sign up for the Ichiraku newsletter.</motion.p>
 
                             <motion.form 

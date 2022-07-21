@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion'; 
 
-const Feature = () => {
+const Feature = ({textEnter, textLeave}) => {
 
     const animation1 = useAnimation();
     const animation2 = useAnimation();
@@ -17,7 +17,6 @@ const Feature = () => {
     })
 
     useEffect(() => {
-        console.log("inView= ", inView);
         if(inView) {
             animation1.start("visibleBottom");
             animation2.start("visibleLeftRight");
@@ -44,12 +43,12 @@ const Feature = () => {
 
         hiddenLeft: {
             opacity: 0,
-            x: "20vw"
+            x: "5vw"
         },
         
         hiddenRight: {
             opacity: 0,
-            x: "-20vw"
+            x: "-5vw"
         },
 
         visibleLeftRight: {
@@ -75,8 +74,12 @@ const Feature = () => {
                     variants={FeatureVariants}
                     initial="hiddenBottom"
                     animate={animation1}
-                    className="feature__container feature__info grid1">
-                    <div className="feature">
+                    className="feature__container feature__info grid1"
+                    id="Feature">
+                    <div 
+                        onMouseEnter={textEnter} 
+                        onMouseLeave={textLeave} 
+                        className="feature">
                         <h3>What's Trending / トレンド</h3>
                         <h2>Japanese Ramen</h2>
                         <p>Feel the taste of Ichirakus best Ramen here</p>
@@ -101,7 +104,10 @@ const Feature = () => {
                     animate={animation2}
                     className="feature__container feature__img grid2">
                     <img src={Feature1} alt="" />
-                    <h2 className="left">おにぎり</h2>
+                    <h2 
+                    onMouseEnter={textEnter} 
+                    onMouseLeave={textLeave} 
+                    className="left">おにぎり</h2>
                 </motion.div>
                 <motion.div 
                     variants={FeatureVariants}
@@ -109,7 +115,10 @@ const Feature = () => {
                     animate={animation3}
                     className="feature__container feature__img grid4">
                     <img src={Feature2} alt="" />
-                    <h2 className="right">中華餃子</h2>
+                    <h2 
+                    onMouseEnter={textEnter} 
+                    onMouseLeave={textLeave} 
+                    className="right">中華餃子</h2>
                 </motion.div>
                 
                 <motion.div
@@ -117,7 +126,10 @@ const Feature = () => {
                     initial="hiddenBottom"
                     animate={animation1}
                     className="feature__container feature__info grid3">
-                    <div className="feature">
+                    <div 
+                        onMouseEnter={textEnter} 
+                        onMouseLeave={textLeave} 
+                        className="feature">
                         <h3>What's Trending / トレンド</h3>
                         <h2>Japanese Drinks</h2>
                         <p>Have a drink with our finest drinks</p>
@@ -135,6 +147,8 @@ const Feature = () => {
                 variants={FeatureVariants}
                 initial="hiddenCenter"
                 animate={animation4}
+                onMouseEnter={textEnter} 
+                onMouseLeave={textLeave} 
                 className="center__discover">DISCOVER</motion.h2>
             </div>
         </StyledFeature>
