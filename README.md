@@ -5,7 +5,7 @@
 # [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 
-- Live Site URL: [https://nekuso.github.io/ichiraku](https://nekuso.github.io/ichiraku)
+<h2>Live Site URL: [https://nekuso.github.io/ichiraku](https://nekuso.github.io/ichiraku)</h2>
 
 - Responsive Ichiraku Noodle Restaurant website Using React, styled-components and Framer Motion
 - Developed first with the Mobile First methodology, then for desktop.
