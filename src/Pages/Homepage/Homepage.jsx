@@ -6,7 +6,6 @@ import Feature from '../../components/Feature';
 import Footer from '../../components/Footer';
 import { motion } from 'framer-motion';
 
-
 const Homepage = () => {
     const [mousePosition, setMousePosition] = useState({
         x: 0,

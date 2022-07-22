@@ -69,7 +69,7 @@ const Feature = ({textEnter, textLeave}) => {
 
     return (
         <StyledFeature>
-            <div ref={ref}className="feature__section">
+            <div ref={ref} className="feature__section">
                 <motion.div
                     variants={FeatureVariants}
                     initial="hiddenBottom"

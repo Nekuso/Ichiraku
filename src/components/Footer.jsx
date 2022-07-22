@@ -56,7 +56,7 @@ const Footer = ({textEnter, textLeave}) => {
     return (
 
         <StyledFooter>
-            <div ref={ref} className="footer__section">
+            <div ref={ref} className="footer__section" >
                 <div className="updates__section">
                     <div className="updates__container">
                         <div className="updates">
