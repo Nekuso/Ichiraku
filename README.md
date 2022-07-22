@@ -4,7 +4,7 @@
 
 <img height="auto" width="auto" src="/src/img/insipired-by-ichiraku.svg"/>
 
-<h2>Live Site URL:</h2> [https://nekuso.github.io/ichiraku](https://nekuso.github.io/ichiraku)
+- Live Site URL: [https://nekuso.github.io/ichiraku](https://nekuso.github.io/ichiraku)
 
 - Responsive Ichiraku Noodle Restaurant website Using React, styled-components and Framer Motion
 - Developed first with the Mobile First methodology, then for desktop.
