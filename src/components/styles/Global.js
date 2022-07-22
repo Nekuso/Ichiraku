@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .cursor {
-        background-color: #2B2C39;
+        background-color: #000000;
         height: 22px;
         width: 22px;
         border-radius: 50%;
