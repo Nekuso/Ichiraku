@@ -1,11 +1,10 @@
-<p align="center">
+<p align="center" display="flex">
     <img height="auto" width="auto" src="/src/img/Brand.png"/>
 </p>
 
-# [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+<img height="auto" width="auto" src="/src/img/insipired-by-ichiraku.svg"/>
 
-
-<h2>Live Site URL: [https://nekuso.github.io/ichiraku](https://nekuso.github.io/ichiraku)</h2>
+<h2>Live Site URL:</h2> [https://nekuso.github.io/ichiraku](https://nekuso.github.io/ichiraku)
 
 - Responsive Ichiraku Noodle Restaurant website Using React, styled-components and Framer Motion
 - Developed first with the Mobile First methodology, then for desktop.
