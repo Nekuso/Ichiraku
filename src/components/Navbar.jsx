@@ -5,19 +5,18 @@ import { motion } from 'framer-motion';
 
 const Navbar = () => {
 
-
     const [navActive, setNavActive] = useState("nav__links");
     const [btnActive, setBtnActive] = useState("nav__hamburger");
     const [btnHam, setBtnHam] = useState(false);
 
     const navToggle = () => {
         navActive === "nav__links" ? setNavActive("nav__links nav__active")
-        : setNavActive("nav__links")
+        : setNavActive("nav__links");
 
         btnActive === "nav__hamburger" ? setBtnActive("nav__hamburger is-active")
-        : setBtnActive("nav__hamburger")
+        : setBtnActive("nav__hamburger");
 
-        btnHam === false ? setBtnHam(true) : setBtnHam(false)
+        btnHam === false ? setBtnHam(true) : setBtnHam(false);
 
     }
 
@@ -37,7 +36,6 @@ const Navbar = () => {
     }
 
     return (
-
         <StyledNavbar>
             <motion.div 
                 className="brand__logo"
