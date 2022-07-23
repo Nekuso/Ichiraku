@@ -5,8 +5,7 @@ import { StyledHero } from './styles/Hero.styled';
 import {motion} from 'framer-motion';
 
 const Hero = ({textEnter, textLeave}) => {
-
-    
+   
     const HomeVariants = {
         hidden: {
             opacity: 0,
