@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 const Navbar = () => {
 
+
     const [navActive, setNavActive] = useState("nav__links");
     const [btnActive, setBtnActive] = useState("nav__hamburger");
     const [btnHam, setBtnHam] = useState(false);
@@ -23,16 +24,14 @@ const Navbar = () => {
     const navVariants = {
         hidden: {
             opacity: 0,
-            y: '-1vh'
+            y: '-4vh'
         },
 
         visible: {
             opacity: 1,
             y: 0,
             transition: {
-                type: 'spring', 
-                stiffness: 100, 
-                duration: 2
+                duration: 1
             }
         }
     }
