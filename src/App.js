@@ -7,8 +7,6 @@ import GlobalStyles from './components/styles/Global';
 
 function App() {
 
-
-
   return (
     <BrowserRouter>
       <GlobalStyles/>
