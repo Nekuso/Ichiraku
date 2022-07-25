@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.js": "/ichiraku/static/js/main.8e6ad728.js",
+    "main.js": "/ichiraku/static/js/main.4cd8f7e9.js",
     "static/js/787.b0fdd5f9.chunk.js": "/ichiraku/static/js/787.b0fdd5f9.chunk.js",
+    "static/media/background.mp4": "/ichiraku/static/media/background.7175792f37e413068c98.mp4",
     "static/media/Left2.png": "/ichiraku/static/media/Left2.90bd14b5c8fa299ae1b7.png",
     "static/media/Left3.png": "/ichiraku/static/media/Left3.70b4100f72975fc14a55.png",
     "static/media/Hero.png": "/ichiraku/static/media/Hero.1c70806b890bc3e85548.png",
@@ -15,10 +16,10 @@
     "static/media/KuroTonkotsu.png": "/ichiraku/static/media/KuroTonkotsu.e39fdf2d5d94bd5dbab5.png",
     "static/media/Owner.png": "/ichiraku/static/media/Owner.e9ab7afaf5373a6d6fae.png",
     "index.html": "/ichiraku/index.html",
-    "main.8e6ad728.js.map": "/ichiraku/static/js/main.8e6ad728.js.map",
+    "main.4cd8f7e9.js.map": "/ichiraku/static/js/main.4cd8f7e9.js.map",
     "787.b0fdd5f9.chunk.js.map": "/ichiraku/static/js/787.b0fdd5f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.8e6ad728.js"
+    "static/js/main.4cd8f7e9.js"
   ]
 }
