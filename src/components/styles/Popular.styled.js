@@ -144,7 +144,7 @@ export const StyledPopular = styled.div `
 
                 .popular__item {
                     width: 25vw;
-                    height: 45vh;
+                    height: 250px;
 
                     .item__name {
                         font-size: 2.5vw;

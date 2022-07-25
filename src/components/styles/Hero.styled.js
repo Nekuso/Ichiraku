@@ -54,6 +54,7 @@ export const StyledHero = styled.div `
                 bottom: 5%;
             }
         }
+        
         .hero__container {
             grid-area: main;
             display: flex;
@@ -68,14 +69,17 @@ export const StyledHero = styled.div `
                 width: 100%;
                 
                 .hero__text {
+                    magin: 0 auto;
                     h2 {
                         // color: #2B2C39;
                         font-size: 3.2vw;
                         margin-bottom: .5rem;
                     }
+                    
                     p {
+                        width: 70%;
                         // color: #2B2C39;
-                        font-size: 1.8vw;
+                        font-size: 1vw;
                         margin-bottom: 1.5rem;
                     }
                     
@@ -96,11 +100,6 @@ export const StyledHero = styled.div `
                                 transform: scale(1.1);
                                 box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
                             }
-                        }
-                        .branchBtn {
-                            background: rgba(43, 44, 57, 0);
-                            border: 1px solid #656781;
-                            color: #2B2C39;
                         }
                     }
                 }
@@ -171,12 +170,16 @@ export const StyledHero = styled.div `
                 background: #2B2C39;
                 .hero {
                     .hero__text {
+                        width: 50%;
+                        margin: 0 auto;
+
                         h2 {
                             font-size: 4.1vw;
                             color: white;
                         }
                         p {
-                            font-size: 2.5vw;
+                            width: 80%;
+                            font-size: 1.6vw;
                             color: white;
                             margin-bottom: 1rem;
                         }
@@ -238,15 +241,19 @@ export const StyledHero = styled.div `
                     justify-content: center;
                     align-items: center;
                     margin: 0 auto;
+                    height: auto;
 
                     .hero__text {
                         display: grid;
                         justify-content: center;
                         text-align: center;
+                        width: 100%;
                         h2 {
                             font-size: 6.1vw;
                         }
                         p {
+                            
+                            margin: 0 auto 1rem auto;
                             font-size: 3.5vw;
                         }
                         

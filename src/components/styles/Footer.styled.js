@@ -257,7 +257,7 @@ export const StyledFooter = styled.div `
                     justify-content: center;
                     gap: 3vw;
                     li {
-                        font-size: 1.8vw;
+                        font-size: 1.7vw;
                         a {
                             color: #FFFF;
                         }

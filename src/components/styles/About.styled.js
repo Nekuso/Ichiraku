@@ -48,26 +48,41 @@ export const StyledAbout = styled.div `
             height: 100%;
             align-items: center;
             position: relative;
+
+            .background__video {
+                position: absolute;
+                background: black;
+                opacity: .8;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
             
             .about {
+                z-index: 2;
                 width: 100%;
                 margin: 10%;
                 
                 h3 {
                     font-size: 2vw;
-                    color: #00001;
+                    color: #FFFF;
                 }
                 h1 {
                     font-size: 4.5vw;
                     margin-bottom: 1rem;
-                    color: #00001;
+                    color: #FFFF;
                 }
                 p {
                     font-size: 1.5vw;
-                    color: #00001;
+                    color: #FFFF;
                 }
             }
-
+            
             .jap__bottom {
                 color: #424258;
                 font-size: 2vw;

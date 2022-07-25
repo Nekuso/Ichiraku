@@ -2,6 +2,7 @@ import React from 'react';
 import { StyledAbout } from './styles/About.styled';
 import AboutLeft1 from '../img/AboutLeft1.png';
 import AboutLeft2 from '../img/AboutLeft2.png';
+import background from '../video/background.mp4'
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion'; 
@@ -106,6 +107,10 @@ const About = ({textEnter, textLeave}) => {
                 initial="hiddenBottom"
                 animate={animation2}
                 className="about__container">
+                    <video className="background__video" 
+                    src={background} autoPlay muted loop type="video/mp4"
+                    />
+
                     <div 
                         onMouseEnter={textEnter} 
                         onMouseLeave={textLeave} 

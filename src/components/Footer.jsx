@@ -91,7 +91,7 @@ const Footer = ({textEnter, textLeave}) => {
 
                 <div className="footer__container">
                     <div className="brand__logo">
-                        <a href="/ichiraku">
+                        <a href="/ichiraku/">
                             <img src={Brand} alt="brand" />
                         </a>
                     </div>

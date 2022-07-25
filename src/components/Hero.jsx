@@ -86,7 +86,8 @@ const Hero = ({textEnter, textLeave}) => {
                                 onMouseLeave={textLeave}>Japanese Authentic <br/>Noodle Restaurant</h2>
                                 <p
                                 onMouseEnter={textEnter} 
-                                onMouseLeave={textLeave}>Ramen is the best pleasure</p>
+                                onMouseLeave={textLeave}>
+                                    Enjoy a genuine taste of Japanese ramen created by Japanese ramen professional!</p>
 
                                 <div className="buttons">
                                     <a href="/ichiraku/#Feature">Explore →</a>
