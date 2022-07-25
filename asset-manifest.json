@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/ichiraku/static/js/main.d6dcf7bc.js",
+    "main.js": "/ichiraku/static/js/main.8e6ad728.js",
     "static/js/787.b0fdd5f9.chunk.js": "/ichiraku/static/js/787.b0fdd5f9.chunk.js",
     "static/media/Left2.png": "/ichiraku/static/media/Left2.90bd14b5c8fa299ae1b7.png",
     "static/media/Left3.png": "/ichiraku/static/media/Left3.70b4100f72975fc14a55.png",
@@ -15,10 +15,10 @@
     "static/media/KuroTonkotsu.png": "/ichiraku/static/media/KuroTonkotsu.e39fdf2d5d94bd5dbab5.png",
     "static/media/Owner.png": "/ichiraku/static/media/Owner.e9ab7afaf5373a6d6fae.png",
     "index.html": "/ichiraku/index.html",
-    "main.d6dcf7bc.js.map": "/ichiraku/static/js/main.d6dcf7bc.js.map",
+    "main.8e6ad728.js.map": "/ichiraku/static/js/main.8e6ad728.js.map",
     "787.b0fdd5f9.chunk.js.map": "/ichiraku/static/js/787.b0fdd5f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d6dcf7bc.js"
+    "static/js/main.8e6ad728.js"
   ]
 }
