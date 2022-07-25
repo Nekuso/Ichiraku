@@ -49,10 +49,9 @@ const Homepage = () => {
 
     return (
         <>
-            <motion.div 
-            className="cursor"
-            variants={variants}
-            animate={cursorVariant}></motion.div>            
+        
+            <motion.div  className="cursor" variants={variants} animate={cursorVariant}/>
+
             <Hero textEnter={textEnter} textLeave={textLeave}/>
             <About textEnter={textEnter} textLeave={textLeave}/>
             <Popular textEnter={textEnter} textLeave={textLeave}/>

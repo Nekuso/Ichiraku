@@ -2,7 +2,10 @@
     <img height="auto" width="auto" src="/src/img/Brand.png"/>
 </p>
 
-<img height="auto" width="auto" src="/src/img/insipired-by-ichiraku.svg"/>
+<p align="left">
+    <img height="auto" width="auto" src="https://forthebadge.com/images/badges/built-with-love.svg"/>
+    <img height="auto" width="auto" src="/src/img/insipired-by-ichiraku.svg"/>
+</p>
 
 - Live Site URL: [https://nekuso.github.io/ichiraku](https://nekuso.github.io/ichiraku)
 

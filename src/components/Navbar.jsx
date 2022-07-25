@@ -11,34 +11,31 @@ const Navbar = () => {
 
     const navToggle = () => {
         navActive === "nav__links" ? setNavActive("nav__links nav__active")
-        : setNavActive("nav__links")
+        : setNavActive("nav__links");
 
         btnActive === "nav__hamburger" ? setBtnActive("nav__hamburger is-active")
-        : setBtnActive("nav__hamburger")
+        : setBtnActive("nav__hamburger");
 
-        btnHam === false ? setBtnHam(true) : setBtnHam(false)
+        btnHam === false ? setBtnHam(true) : setBtnHam(false);
 
     }
 
     const navVariants = {
         hidden: {
             opacity: 0,
-            y: '-1vh'
+            y: '-4vh'
         },
 
         visible: {
             opacity: 1,
             y: 0,
             transition: {
-                type: 'spring', 
-                stiffness: 100, 
-                duration: 2
+                duration: 1
             }
         }
     }
 
     return (
-
         <StyledNavbar>
             <motion.div 
                 className="brand__logo"
