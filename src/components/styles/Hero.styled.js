@@ -225,7 +225,7 @@ export const StyledHero = styled.div `
     @media screen and (max-width: 425px) {
         .hero__section {
             grid-template-columns: 100%;
-            grid-template-rows: 400px 100px;
+            grid-template-rows: 500px 100px;
             grid-template-areas: 
                 "main"
                 "footer"
@@ -241,7 +241,6 @@ export const StyledHero = styled.div `
                     justify-content: center;
                     align-items: center;
                     margin: 0 auto;
-                    height: auto;
 
                     .hero__text {
                         display: grid;
@@ -262,8 +261,7 @@ export const StyledHero = styled.div `
                             a {
                                 font-size: 3vw;
                                 padding: .8rem 1.1rem;
-                            }
-                        }
+                            }                        }
                     }
 
                     img {
