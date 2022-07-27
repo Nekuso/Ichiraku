@@ -225,7 +225,7 @@ export const StyledHero = styled.div `
     @media screen and (max-width: 425px) {
         .hero__section {
             grid-template-columns: 100%;
-            grid-template-rows: 500px 100px;
+            grid-template-rows: 450px 100px;
             grid-template-areas: 
                 "main"
                 "footer"
@@ -280,7 +280,7 @@ export const StyledHero = styled.div `
                         color: white;
                     }
                     p {
-                        font-size: 2.4vw;
+                        font-size: 3vw;
                         color: white;
                     }
                 }
@@ -290,7 +290,7 @@ export const StyledHero = styled.div `
                     }
 
                     p {
-                        font-size: 2.4vw;
+                        font-size: 2.6vw;
                         color: white;
                     }
                 }

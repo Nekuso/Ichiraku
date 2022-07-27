@@ -3,12 +3,13 @@ import styled from  'styled-components';
 
 export const StyledAbout = styled.div `
 
-    .about__section {
+.about__section {
         display: grid;
         grid-template-columns: 25% 75%;
         height: 100vh;
         width: 100%;
         background: #FFFF;
+        background-color: black; 
 
         .left__about {
             display: grid;
@@ -50,6 +51,7 @@ export const StyledAbout = styled.div `
             position: relative;
 
             .background__video {
+                pointer-events: none;
                 position: absolute;
                 background: black;
                 opacity: .8;
@@ -116,6 +118,21 @@ export const StyledAbout = styled.div `
                 }
                 .jap__bottom {
                     font-size: 3vw;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .about__section {
+            .about__container {
+                .background__video {
+                    opacity: .4;
+                }
+                .about {
+                    p {
+                        font-size: 2.5vw;
+                    }
                 }
             }
         }
