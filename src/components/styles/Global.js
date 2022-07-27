@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
     
     body {
         overflow-x: hidden;
+    
     }
 
     .cursor {
@@ -38,6 +39,28 @@ const GlobalStyles = createGlobalStyle`
             display: none;
         }
     }
+
+/* width */
+::-webkit-scrollbar {
+    background-color: transparent;        
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2a447c81;
+    border-radius: 1rem;
+    transition: .3s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2a447cbb;
+}
 
 `
 
