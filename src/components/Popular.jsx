@@ -16,7 +16,7 @@ const Popular = ({textEnter, textLeave}) => {
     const animation5 = useAnimation();   
 
     const {ref, inView} = useInView({
-        threshold: 0.6
+        threshold: 0.1
     })
 
     useEffect(() => {

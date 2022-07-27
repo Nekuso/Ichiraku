@@ -193,6 +193,8 @@ export const StyledPopular = styled.div `
 
     @media screen and (max-width: 425px) {
         .popular__section {
+            width: 100%;
+            height: auto;
 
             .jap__text1 {
                 bottom: 15px;
@@ -219,11 +221,16 @@ export const StyledPopular = styled.div `
             }
 
             .popular__carousel {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
                 padding: 1rem 0 1.5rem 0;
 
                 .popular__item {
-                    width: 25vw;
-                    height: 150px;
+                    width: 40vw;
+                    height: auto;
                     border-radius: 1rem;
 
                     img {
@@ -231,7 +238,7 @@ export const StyledPopular = styled.div `
                     }
 
                     .item__name {
-                        font-size: 2.1vw;
+                        font-size: 3.5vw;
                         padding: .5rem 0;
                     }
                     
@@ -239,7 +246,7 @@ export const StyledPopular = styled.div `
                         color: #FFFFFF;
                         text-spacing: 20px;
                         letter-spacing: 1px;
-                        font-size: 1.6vw;
+                        font-size: 3.6vw;
                     }
                     
                     .item__info__container {
@@ -249,7 +256,7 @@ export const StyledPopular = styled.div `
 
                         .info__left {
                             img {
-                                width: .4rem;
+                                width: .8rem;
                             }
                         }
                     }

@@ -125,6 +125,7 @@ export const StyledAbout = styled.div `
 
     @media screen and (max-width: 425px) {
         .about__section {
+            height: 40vh;
             .about__container {
                 .background__video {
                     opacity: .4;

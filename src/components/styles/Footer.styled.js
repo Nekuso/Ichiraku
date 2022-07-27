@@ -208,7 +208,7 @@ export const StyledFooter = styled.div `
 
     @media screen and (max-width: 425px) {
         .footer__section {
-            height: 300px;
+            height: 500px;
             .updates__section {
                 .updates__container {
                     .updates {

@@ -13,7 +13,7 @@ const Feature = ({textEnter, textLeave}) => {
     const animation3 = useAnimation();
     const animation4 = useAnimation();
     const {ref, inView} = useInView({
-        threshold: 0.3
+        threshold: 0.2
     })
 
     useEffect(() => {

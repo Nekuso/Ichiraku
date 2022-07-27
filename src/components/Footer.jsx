@@ -12,7 +12,7 @@ const Footer = ({textEnter, textLeave}) => {
     const animation2 = useAnimation();
     const animation3 = useAnimation();
     const {ref, inView} = useInView({
-        threshold: 0.5
+        threshold: 0.1
     });
     useEffect(() => {
         if(inView) {
