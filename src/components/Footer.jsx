@@ -12,7 +12,7 @@ const Footer = ({textEnter, textLeave}) => {
     const animation2 = useAnimation();
     const animation3 = useAnimation();
     const {ref, inView} = useInView({
-        threshold: 0.1
+        threshold: 0.4
     });
     useEffect(() => {
         if(inView) {
@@ -20,12 +20,6 @@ const Footer = ({textEnter, textLeave}) => {
             animation2.start("visible2");
             animation3.start("visible3");
         }
-        if(!inView) {
-            animation1.start("hidden");
-            animation2.start("hidden");
-            animation3.start("hidden");
-        }
-
     }, [animation1,animation2,animation3,inView]);
 
     const FooterVariants = {

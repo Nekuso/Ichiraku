@@ -107,8 +107,8 @@ export const StyledNavbar = styled.div `
                 border-radius: 6px;
                 transform-origin: 0,0;
                 transition: .4s;
-        
             }
+            
             &:hover span:nth-child(2){
                 background: #FF9E68;
                 transform: translateX(15px);

@@ -16,7 +16,7 @@ const Popular = ({textEnter, textLeave}) => {
     const animation5 = useAnimation();   
 
     const {ref, inView} = useInView({
-        threshold: 0.1
+        threshold: 0.5
     })
 
     useEffect(() => {
@@ -26,13 +26,6 @@ const Popular = ({textEnter, textLeave}) => {
             animation3.start("visibleBottom3");
             animation4.start("visibleLeftRight");
             animation5.start("visibleLeftRight");
-        }
-        if(!inView) {
-            animation1.start("hiddenBottom1");
-            animation2.start("hiddenBottom1");
-            animation3.start("hiddenBottom1");
-            animation4.start("hiddenLeft");
-            animation5.start("hiddenRight");
         }
     }, [animation1,animation2,animation3,animation4,animation5,inView]);
 

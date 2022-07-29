@@ -13,7 +13,7 @@ const Feature = ({textEnter, textLeave}) => {
     const animation3 = useAnimation();
     const animation4 = useAnimation();
     const {ref, inView} = useInView({
-        threshold: 0.2
+        threshold: 0.6
     })
 
     useEffect(() => {
@@ -22,12 +22,6 @@ const Feature = ({textEnter, textLeave}) => {
             animation2.start("visibleLeftRight");
             animation3.start("visibleLeftRight");
             animation4.start("visibleCenter");
-        }
-        if(!inView) {
-            animation1.start("hiddenBottom");
-            animation2.start("hiddenLeft");
-            animation3.start("hiddenRight");
-            animation4.start("hiddenCenter");
         }
     }, [animation1,animation2,animation3,animation4,inView])
 

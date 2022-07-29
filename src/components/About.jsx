@@ -10,7 +10,7 @@ import { useAnimation, motion } from 'framer-motion';
 const About = ({textEnter, textLeave}) => {
 
     const {ref, inView} = useInView({
-        threshold: 0.2
+        threshold: 0.4
     });
 
     const animateSection = useAnimation();
@@ -20,13 +20,8 @@ const About = ({textEnter, textLeave}) => {
     useEffect(() => {
         if(inView) {
             animateSection.start("visible");
-            animation.start("visibleLeft")
-            animation2.start("visibleBottom")
-        }
-        if(!inView) {
-            animateSection.start("hidden");
-            animation.start("hiddenLeft")
-            animation2.start("hiddenBottom")
+            animation.start("visibleLeft");
+            animation2.start("visibleBottom");
         }
     }, [animateSection,animation,animation2,inView]);
 
