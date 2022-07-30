@@ -42,27 +42,23 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-/* width */
-::-webkit-scrollbar {
-    background-color: transparent;        
-    width: 10px;
-}
+    ::-webkit-scrollbar {
+        background-color: transparent;        
+        width: 10px;
+    }
 
-/* Track */
-::-webkit-scrollbar-track {
-}
+    ::-webkit-scrollbar-track {
+    }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #2a447c81;
-    border-radius: 1rem;
-    transition: .3s ease-in-out;
-}
+    ::-webkit-scrollbar-thumb {
+        background: #2a447c81;
+        border-radius: 1rem;
+        transition: .3s ease-in-out;
+    }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #2a447cbb;
-}
+    ::-webkit-scrollbar-thumb:hover {
+    background: #2a447cbb;
+    }
 
 `
 
