@@ -131,7 +131,6 @@ const Hero = ({textEnter, textLeave}) => {
                             >"This is the best Authentic<br/>Japanese Restaurant I have<br/>experienced"</p>
                         </motion.div>
                     </motion.div>
-
                 </motion.div>
             </StyledHero>
     )
