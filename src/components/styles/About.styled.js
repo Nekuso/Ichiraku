@@ -3,7 +3,7 @@ import styled from  'styled-components';
 
 export const StyledAbout = styled.div `
 
-.about__section {
+    .about__section {
         display: grid;
         grid-template-columns: 25% 75%;
         height: 100vh;
@@ -132,7 +132,7 @@ export const StyledAbout = styled.div `
                 }
                 .about {
                     p {
-                        font-size: 2.5vw;
+                        font-size: 2.6vw;
                     }
                 }
             }
