@@ -73,6 +73,7 @@ const About = ({textEnter, textLeave}) => {
             initial="hidden"
             className="about__section"
             id="About">
+                
                 <motion.div 
                 variants={AboutVariants}
                 initial="hiddenLeft"
